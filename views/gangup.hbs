@@ -1,0 +1,59 @@
+<div id = "splashDiv" class = "text-center">
+    <h1>Play GangUp!</h1>
+    <div>Find a squad, find adventure.</div>
+    <div>Now that you're logged in, press the button below to begin searching through the many players on the site</div>
+    <br/>
+
+    <strong><div id = "gameDone" class = "hidden">You have cycled through all unique users! You can start over below...</div></strong>
+
+    <button id = "startBtn" class = "btn btn-default">Start looking for a squad!</button>
+</div>
+
+<br/>
+<div id = "gameDiv" class = "hidden container-fluid text-center">
+    <div class="card container">
+        <!--<img src="img.jpg" alt="" style="width:100%">-->
+        <h1 id = "usernameH1">Test</h1>
+
+        <p class = "games">
+            <strong>Favorite Games: </strong><br/>
+            <span id = "gameSpan"></span>
+            <br />
+        </p>
+
+        <p>
+            <strong>Playstation Network ID:</strong><span id = "psnID"></span><br>
+
+            <strong>Epic Games ID:</strong><span id = "epicID"></span><br>
+
+            <strong>Xbox Live ID:</strong><span id = "xboxID"></span><br>
+
+            <strong>Located in:</strong><span id = "locationID"></span><br>
+
+            <strong>Age:</strong><span id = "ageID"></span><br>
+
+            <strong>Gender:</strong><span id = "genderID"></span><br>
+        </p>
+
+        <br/>
+        <strong><p id = "aboutHeader"></p></strong>
+            <p id = "descriptionP"></p>
+
+    </div>
+    <hr>
+
+    <div class = "text-center">
+        <p class = "likes">
+            <strong> This user likes the following users: </strong><br/>
+            <span id = "likeSpan"></span>
+            <br/>
+        </p>
+    </div>
+
+    <div class = "text-center">
+        <button id = "swipeLeft" class = "btn btn-default">Pass...</button>
+        <button id = "swipeRight" class = "btn btn-default">Like this user</button>
+    </div>
+</div>
+
+<script src = "../js/game.js"></script>

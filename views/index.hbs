@@ -1,0 +1,14 @@
+<div class = "text-center">
+    <h1>GangUp!</h1>
+    <div>Find a squad, find adventure.</div>
+    <div>Register, or login, to customize your own profile and find your squad!</div>
+    <br/>
+    <img class = "img-circle" src="/images/destiny.jpg" style = "width: 90%"/>
+    <br/>
+    <div id = "profileDiv">
+        {{#if user}}
+            <a href = "/profile/{{user.slug}}">View your Profile!</a>
+        {{/if}}
+    </div>
+
+</div>

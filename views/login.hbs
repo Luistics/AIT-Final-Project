@@ -1,0 +1,35 @@
+<h1>
+    <div class = "text-center">
+        <span class = "fa fa-sign-in"></span> Login
+    </div>
+</h1>
+
+{{#if error}}
+    <div class = "alert alert-danger">{{error}}</div>
+{{/if}}
+
+<form class = "form-horizontal" action = "/login" method = "POST">
+    <div class = "form-group">
+        <label class = "control-label col-sm-4">Username</label>
+        <div class = "col-sm-5">
+            <input type = "text" class = "form-control" name = "username">
+        </div>
+    </div>
+
+    <div class = "form-group">
+        <label class = "control-label col-sm-4">Password</label>
+        <div class = "col-sm-5">
+            <input type = "password" class = "form-control" name = "password">
+        </div>
+    </div>
+
+   <div class = "form-group">
+       <div class = "col-sm-offset-4 col-sm-5">
+           <button type = "submit" class = "btn btn-default btn-login">Login</button>
+       </div>
+   </div>
+</form>
+
+<div class = "col-sm-offset-4">
+    <p>Need an account? <a href="/register">Register here</a></p>
+</div>

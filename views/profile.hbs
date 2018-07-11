@@ -1,0 +1,66 @@
+<br/>
+<div class = "container-fluid text-center">
+    <div class="card container">
+        <!--<img src="img.jpg" alt="" style="width:100%">-->
+        <h1>{{username}}'s Profile</h1>
+        <p class = "games"><strong>Favorite Games: </strong><br />
+        {{#each games}}
+            {{this}}<br/>
+        {{/each}}
+        </p>
+        <p>
+            <strong>Playstation Network ID</strong>: {{PSN}}<br>
+
+            {{#if epicID}}
+                <strong>Epic Games ID</strong>: {{epicID}}<br>
+            {{else}}
+                <strong>Epic Games ID</strong>: Not set.<br>
+            {{/if}}
+
+            {{#if xboxLive}}
+                <strong>Xbox Live ID</strong>: {{xboxLive}}<br>
+            {{else}}
+                <strong>Xbox Live ID</strong>: Not set.<br>
+            {{/if}}
+
+            <strong>Located in</strong>: {{location}}<br>
+
+
+            {{#if age}}
+                <strong>Age</strong>: {{age}} <br>
+            {{else}}
+                <strong>Age</strong>: Not set. <br>
+            {{/if}}
+
+            {{#if gender}}
+                <strong>Gender</strong>: {{gender}} <br>
+            {{else}}
+                <strong>Gender</strong>: Not set.<br>
+            {{/if}}
+        </p>
+
+        <br/>
+        <strong><p>About {{username}}</p></strong>
+        {{#if description}}
+            <p>{{description}}</p>
+        {{else}}
+            <p>No content.</p>
+        {{/if}}
+
+    </div>
+    <hr>
+    {{#if isOwn}}
+    <div>
+        <span>Don't like your current profile the way it is? Edit it <a href = "/profile/{{user.slug}}/edit">here</a>.</span>
+    </div>
+    {{else}}
+        <span>View your own profile <a href = "/profile/{{user.slug}}">here</a>.</span>
+    {{/if}}
+
+    <p class = "likes"><strong>{{username}}'s Liked Users:</strong><br />
+        {{#each likes}}
+            {{this}}<br/>
+        {{/each}}
+    </p>
+
+</div>

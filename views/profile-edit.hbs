@@ -1,0 +1,72 @@
+<!-- Todo if time allows it
+
+       Make this form have the current values of the profile that is being edited
+       as the default values
+       &
+       Implement a cancel button instead
+-->
+
+<h1>
+    <div class = "text-center">
+        <span class = "fa fa-sign-in"></span> Edit your profile!
+    </div>
+</h1>
+
+<div id="content">
+    <h2 class = "text-center">Fill in the form to edit your profile!</h2><br/>
+
+        <form class = "form-horizontal" id="editForm" method="POST" action="">
+
+            <div class = "form-group">
+                <label class = "control-label col-sm-4" for="games">Your favorite games:</label>
+                <div class = "col-sm-5">
+                    <select class = "form-control" multiple id="games" class="games" name="games">
+                        <option value="Fortnite Battle Royale">Fortnite</option>
+                        <option value="PlayerUnknowns Battlegrounds">PUBG</option>
+                        <option value="Rocket League">Rocket League</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class = "form-group">
+                <label class = "control-label col-sm-4" for="location">Location:</label>
+                <div class = "col-sm-5">
+                    <select id="location" class="location" name="location">
+                        <option value="North America - East">North America - East</option>
+                        <option value="North America - West">North America - West</option>
+                        <option value="South America">South America</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Oceania">Oceania</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class = "form-group">
+                <label class = "control-label col-sm-4" for="age">Age:</label>
+                <div class = "col-sm-5">
+                    <input type="number" min="15" max="100" value="15">
+                </div>
+            </div>
+
+            <div class = "form-group">
+                <label class = "control-label col-sm-4" for="gender">Gender:</label>
+                <div class = "col-sm-5">
+                    <input class = "form-control" type="text" id = "gender" name = "gender">
+                </div>
+            </div>
+
+            <div class = "form-group">
+                <label class = "control-label col-sm-4" for="about">About me:</label>
+                <div class = "col-sm-5">
+                    <input class = "form-control input-lg" id = "about" type = "text" name = "about">
+                </div>
+            </div>
+
+            <div class = "form-group">
+                <div class = "col-sm-offset-4 col-sm-5">
+                    <button id = "submitButton" type = "submit" class = "btn btn-default">Edit your profile!</button>
+                </div>
+            </div>
+        </form>
+</div>
